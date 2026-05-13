@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.7" />
+    <PackageReference Include="LibVLCSharp.WinForms" Version="3.9.7.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.32">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="SpotifyAPI.Web" Version="7.4.2" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.23.1" />
+    <PackageReference Include="YoutubeExplode" Version="6.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- AnaEkran Form -->
+    <Compile Update="Arayuz\AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Arayuz\AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+
+    <!-- GirisEkrani Form -->
+    <Compile Update="Arayuz\GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Arayuz\GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+
+    <!-- ListeOlusturEkrani Form -->
+    <Compile Update="Arayuz\ListeOlusturEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Arayuz\ListeOlusturEkrani.Designer.cs">
+      <DependentUpon>ListeOlusturEkrani.cs</DependentUpon>
+    </Compile>
+    <!-- KayitEkrani Form -->
+    <Compile Update="Arayuz\KayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Arayuz\KayitEkrani.Designer.cs">
+      <DependentUpon>KayitEkrani.cs</DependentUpon>
+    </Compile>
+    
+    <!-- SarkiKarti UserControl -->
+    <Compile Update="Arayuz\SarkiKarti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Arayuz\SarkiKarti.Designer.cs">
+      <DependentUpon>SarkiKarti.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
